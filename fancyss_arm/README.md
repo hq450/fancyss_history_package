@@ -1,4 +1,4 @@
-# shadowsocks 离线安装包使用说明
+# fancyss - 科学上网离线安装包使用说明
 本目录下的离线安装包仅适用于merlin koolshare arm机型改版固件（linux内核版本：2.6.36），且版本号≥X7.2的固件（订阅功能需要版本号≥X7.7），固件下载地址：[固件下载地址](http://koolshare.cn/forum-96-1.html)。请注意，<b>RT-AC86U</b>和<b>GT-AC5300</b>两款机器不能使用fancyss_arm！因为这两款机器的是新架构！
 
 请下载离线安装包后将文件名更改为shadowsocks.tar.gz，然后在软件中心离线安装页面上传安装。
