@@ -7,3 +7,6 @@
 
 # 机型/固件支持
 fancyss_hnd适用于RT-AC86U和GT-AC5300两款机器的官改固件/merlin改版固件，其它arm架构和mipsel架构的merlin固件不能使用fancyss_hnd！
+
+# 源码
+查看源码请前往：[https://github.com/hq450/fancyss](https://github.com/hq450/fancyss)

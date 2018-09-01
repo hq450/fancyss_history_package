@@ -6,6 +6,7 @@
 4.0.3及以后的版本是接着koolshare开发组更新的最后一个版本基础上开始，在单独的项目（fancyss）内维护，不会有以上的问题。
 
 # 机型/固件支持
-fancyss_arm适用于merlin koolshare arm机型改版固件，版本号≥X7.2的固件（订阅功能需要版本号≥X7.7），固件下载地址：固件下载地址。请注意，RT-AC86U和GT-AC5300两款机器不能使用fancyss_arm！因为这两款机器的是arm新架构！RT-AC66U和RT-N66U也不能使用fancyss_arm！因为这两款机器的是mipsel架构！
+fancyss_arm离线安装包仅适用于merlin koolshare arm机型改版固件（linux内核版本：2.6.36），版本号≥X7.2的固件（订阅功能需要版本号≥X7.7），固件下载地址：固件下载地址。请注意，RT-AC86U和GT-AC5300两款机器不能使用fancyss_arm！因为这两款机器的是arm新架构！RT-AC66U和RT-N66U也不能使用fancyss_arm！因为这两款机器的是mipsel架构！
 
-
+# 源码
+查看源码请前往：[https://github.com/hq450/fancyss](https://github.com/hq450/fancyss)
