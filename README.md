@@ -15,8 +15,8 @@
 
 #### 注意： 
 * fancyss_arm仅支持版本号≥X7.2的固件（订阅功能需要版本号≥X7.7）
-* *RT-AC86U*和*GT-AC5300*两款机器不能使用fancyss_arm！因为这两款机器的是新架构！
-* *RT-AC66U*和*RT-N66U*也不能使用fancyss_arm！因为这两款机器的是mipsel架构！
+* *RT-AC86U*和*GT-AC5300*两款机器不能使用fancyss_arm！因为这两款机器的是新架构，请使用fancyss_hnd！
+* *RT-AC66U*和*RT-N66U*也不能使用fancyss_arm！因为这两款机器的是mipsel架构，请使用fancyss_mipsel！
 
 PS: arm机型的固件下载地址: [http://koolshare.cn/forum-96-1.html](http://koolshare.cn/forum-96-1.html)
 
