@@ -3,9 +3,8 @@
 
 # 机型/固件支持
 
-----
 ### [fancyss_arm](https://github.com/hq450/fancyss/tree/master/fancyss_arm)
-**fancyss_arm**离线安装包仅适用于merlin koolshare arm架构机型改版固件（arm架构，linux内核版本：2.6.36.4，，bcm470X系列cpu），版本号≥X7.2的固件（订阅功能需要版本号≥X7.7），
+**fancyss_arm**离线安装包仅适用于merlin koolshare arm架构机型改版固件（arm架构，linux内核版本：2.6.36.4，，bcm470X系列cpu）
 
 **fancyss_arm**支持机型（需刷梅林koolshare改版固件）：
 * 华硕系列：`RT-AC56U` `RT-AC68U` `RT-AC66U-B1` `RT-AC1900P` `RT-AC87U` `RT-AC88U` `RT-AC3100` `RT-AC3200` `RT-AC5300`
@@ -39,4 +38,4 @@ PS: arm机型的固件下载地址: [http://koolshare.cn/forum-96-1.html](http:/
 **fancyss_mipsel**支持机型（需刷梅林koolshare改版固件）：
 * 华硕系列：`RT-N66U` `RT-AC66U（非RT-AC66U-B1）`
 
-PS: mipsel机型的固件下载地址: [http://koolshare.cn/forum-96-1.html]()
+PS: mipsel机型的固件下载地址: [http://koolshare.cn/forum-96-1.html](http://koolshare.cn/forum-96-1.html)
