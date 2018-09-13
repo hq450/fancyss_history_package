@@ -6,7 +6,16 @@
 1.3.8及以后的版本是接着koolshare开发组更新的最后一个版本基础上开始，在单独的项目（fancyss）内维护，不会有以上的问题。
 
 # 机型/固件支持
-fancyss_hnd适用于RT-AC86U和GT-AC5300两款机器的官改固件/merlin改版固件，其它arm架构和mipsel架构的merlin固件不能使用fancyss_hnd！
+### [fancyss_hnd](https://github.com/hq450/fancyss/tree/master/fancyss_hnd)
+**fancyss_hnd**离线安装包仅适用于asus/merlin koolshare hnd平台机型改版固件（arm架构，linux内核版本：4.1.27，bcm490X系列cpu）
+
+**fancyss_hnd**支持机型/固件：
+ * [RT-AC86U merlin改版固件](http://koolshare.cn/thread-127878-1-1.html)
+ * [RT-AC86U 官改固件](http://koolshare.cn/thread-139965-1-1.html)
+ * [GT-AC5300 官改固件](http://koolshare.cn/thread-130902-1-1.html)
+
+#### 注意： 
+* 其它arm架构或mipsel架构的merlin固件不能使用fancyss_hnd！
 
 # 源码
 查看源码请前往：[https://github.com/hq450/fancyss](https://github.com/hq450/fancyss)
