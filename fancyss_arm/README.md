@@ -1,4 +1,4 @@
-# fancyss_hnd 离线安装包使用说明
+# fancyss_arm 离线安装包使用说明
 请下载离线安装包后将文件名更改为shadowsocks.tar.gz，然后在软件中心离线安装页面上传安装。
 
 # 注意
