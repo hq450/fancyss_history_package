@@ -3,6 +3,21 @@
 
 # 机型/固件支持
 
+### [fancyss_hnd](https://github.com/hq450/fancyss/tree/master/fancyss_hnd)
+**fancyss_hnd**离线安装包仅适用于asus/merlin koolshare hnd/axhnd平台机型改版固件（armV8架构，linux内核版本：4.1.27/4.1.51，bcm490X系列cpu）
+
+**fancyss_hnd**支持机型/固件：
+ * [RT-AC86U merlin改版固件](http://koolshare.cn/thread-127878-1-1.html)
+ * [RT-AX88U merlin改版固件](http://koolshare.cn/thread-158199-1-1.html)
+ * [RT-AC86U 官改固件](http://koolshare.cn/thread-139965-1-1.html)
+ * [GT-AC5300 官改固件](http://koolshare.cn/thread-130902-1-1.html)
+ * [GT-AX11000 官改固件](http://koolshare.cn/thread-159465-1-1.html)
+
+#### 注意： 
+* 其它arm架构或mipsel架构的merlin固件不能使用fancyss_hnd！
+
+----
+
 ### [fancyss_arm](https://github.com/hq450/fancyss/tree/master/fancyss_arm)
 **fancyss_arm**离线安装包仅适用于merlin koolshare arm架构机型改版固件（arm架构，linux内核版本：2.6.36.4，，bcm470X系列cpu）
 
@@ -20,19 +35,7 @@
 PS: arm机型的固件下载地址: [http://koolshare.cn/forum-96-1.html](http://koolshare.cn/forum-96-1.html)
 
 ----
-### [fancyss_hnd](https://github.com/hq450/fancyss/tree/master/fancyss_hnd)
-**fancyss_hnd**离线安装包仅适用于asus/merlin koolshare hnd/axhnd平台机型改版固件（armV8架构，linux内核版本：4.1.27/4.1.51，bcm490X系列cpu）
 
-**fancyss_hnd**支持机型/固件：
- * [RT-AX88U merlin改版固件](http://koolshare.cn/thread-158199-1-1.html)
- * [RT-AC86U merlin改版固件](http://koolshare.cn/thread-127878-1-1.html)
- * [RT-AC86U 官改固件](http://koolshare.cn/thread-139965-1-1.html)
- * [GT-AC5300 官改固件](http://koolshare.cn/thread-130902-1-1.html)
-
-#### 注意： 
-* 其它arm架构或mipsel架构的merlin固件不能使用fancyss_hnd！
-
-----
 ### [fancyss_mipsel](https://github.com/hq450/fancyss/tree/master/fancyss_mipsel)
 适用于merlin koolshare mipsel架构机型的改版固件，由于mipsel架构老旧且性能较低，此架构机型的科学上网插件已经不再维护，最后的版本是3.0.4，此处作为仓库搬迁后的备份留存。
 
