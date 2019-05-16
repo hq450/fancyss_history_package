@@ -43,3 +43,12 @@ PS: arm机型的固件下载地址: [http://koolshare.cn/forum-96-1.html](http:/
 * 华硕系列：`RT-N66U` `RT-AC66U（非RT-AC66U-B1）`
 
 PS: mipsel机型的固件下载地址: [http://koolshare.cn/forum-96-1.html](http://koolshare.cn/forum-96-1.html)
+
+----
+
+### [fancyss_X64](https://github.com/hq450/fancyss/tree/master/fancyss_X64)
+适用于koolshare OpenWRT/LEDE X64 带酷软的固件，由于该固件酷软下架了koolss插件，本项目将其收入。
+
+#### 相关链接：
+* koolshare OpenWRT/LEDE X64机型的科学上网离线包：[https://github.com/hq450/fancyss_history_package/tree/master/fancyss_X64](https://github.com/hq450/fancyss_history_package/tree/master/fancyss_X64)
+
