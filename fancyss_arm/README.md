@@ -23,3 +23,6 @@
 
 # 源码
 查看源码请前往：[https://github.com/hq450/fancyss](https://github.com/hq450/fancyss)
+
+# 更新日志
+https://github.com/hq450/fancyss/blob/master/fancyss_arm/Changelog.txt
