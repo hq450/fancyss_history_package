@@ -1,6 +1,9 @@
 # fancyss_X64 for koolshare OpenWRT/LEDE X64 with koolcenter
+
 此文件夹下的插件包适用于koolshare OpenWRT/LEDE X64 带酷软的固件。
+
 由于该固件酷软下架了koolss，v2ray，wireguard，brook插件，本项目将其收入，作为备份。
+
 同时修复了这些插件使用酷软离线安装失败、版本号不正确的问题。
 
  - koolss：最后版本号：2.2.2
