@@ -31,7 +31,7 @@ fancyss_arm384可以用在比如RT-AC88U_384.12_0，RT-AC5300_384.12_0的koolsha
 
 fancyss_arm384相当于fancyss_arm 和 fancyss_hnd的合体，但是不兼容其中任何一个（因为web api或者二进制架构不同的原因），   不过因为部分二进制文件是全静态编译的，所以部分二进制文件在两个不同的平台是可以通用的，   所以fancyss_arm384会用到一些fancyss_hnd的二进制文件，如ss-redir，rss-redir等，   也有很多不通用的，比如dnsmasq-fastlookup，v2ray，httping，dns2socks等程序。
 
-fancyss_arm384在功能上几乎复刻了fancyss_hnd，所以fancyss_hnd本来已有的功能，在fancyss_arm384几乎都会有，fancyss_arm384/fancyss_hnd相比fancyss_arm，有更精简的代码、更好节点管理功能、新增的故障转移等等功能，但是由于fancyss_arm384 所支持的梅林固件linux内核版本2.6.36太老旧，因此不支持fancyss_hnd有的一些特性，目前已知的fancyss_arm384比fancyss_hnd会少**[ss/ssr 开启多核心支持]**和**[tcp fast open]**功能。
+fancyss_arm384在功能上几乎复刻了fancyss_hnd，所以fancyss_hnd本来已有的功能，在fancyss_arm384几乎都会有，fancyss_arm384/fancyss_hnd相比fancyss_arm，有更精简的代码、更好节点管理功能、新增的故障转移等等功能，但是由于fancyss_arm384 所支持的梅林固件linux内核版本2.6.36太老旧，因此不支持fancyss_hnd有的一些特性，目前已知的fancyss_arm384比fancyss_hnd会少 **[ss/ssr 开启多核心支持]** 和 **[tcp fast open]** 功能。
 
 fancyss_arm384的一些特性的相关功能多数时候可以参考fancyss_hnd的更新日志：[Changelog.txt](https://github.com/hq450/fancyss/blob/master/fancyss_hnd/Changelog.txt)
 
