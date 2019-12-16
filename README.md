@@ -7,11 +7,12 @@
 **fancyss_hnd**离线安装包仅适用于asus/merlin koolshare hnd/axhnd平台机型改版固件（armV8架构，linux内核版本：4.1.27/4.1.51，bcm490X系列cpu）
 
 **fancyss_hnd**支持机型/固件：
- * [RT-AC86U merlin改版固件](http://koolshare.cn/thread-127878-1-1.html)
- * [RT-AX88U merlin改版固件](http://koolshare.cn/thread-158199-1-1.html)
- * [RT-AC86U 官改固件](http://koolshare.cn/thread-139965-1-1.html)
- * [GT-AC5300 官改固件](http://koolshare.cn/thread-130902-1-1.html)
- * [GT-AX11000 官改固件](http://koolshare.cn/thread-159465-1-1.html)
+ * [ASUS RT-AC86U 梅林改版固件](http://koolshare.cn/thread-127878-1-1.html)
+ * [ASUS RT-AX88U 梅林改版固件](http://koolshare.cn/thread-158199-1-1.html)
+ * [ASUS RT-AC86U 官改固件](http://koolshare.cn/thread-139965-1-1.html)
+ * [ASUS GT-AC5300 官改固件](http://koolshare.cn/thread-130902-1-1.html)
+ * [ASUS GT-AX11000 官改固件](http://koolshare.cn/thread-159465-1-1.html)
+ * NetGear RAX80 梅林改版固件
 
 #### 注意： 
 * 其它arm架构或mipsel架构的merlin固件不能使用fancyss_hnd！
