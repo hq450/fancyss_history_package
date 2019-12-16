@@ -13,12 +13,12 @@
 
 **fancyss_hnd**支持机型/固件：
 
- * [RT-AC86U merlin改版固件](http://koolshare.cn/thread-127878-1-1.html)
- * [RT-AX88U merlin改版固件](http://koolshare.cn/thread-158199-1-1.html)
- * [RT-AC86U 官改固件](http://koolshare.cn/thread-139965-1-1.html)
- * [GT-AC5300 官改固件](http://koolshare.cn/thread-130902-1-1.html)
- * [GT-AX11000 官改固件](http://koolshare.cn/thread-159465-1-1.html)
-
+ * [ASUS RT-AC86U 梅林改版固件](http://koolshare.cn/thread-127878-1-1.html)
+ * [ASUS RT-AX88U 梅林改版固件](http://koolshare.cn/thread-158199-1-1.html)
+ * [ASUS RT-AC86U 官改固件](http://koolshare.cn/thread-139965-1-1.html)
+ * [ASUS GT-AC5300 官改固件](http://koolshare.cn/thread-130902-1-1.html)
+ * [ASUS GT-AX11000 官改固件](http://koolshare.cn/thread-159465-1-1.html)
+ * NetGear RAX80 梅林改版固件
 ## 注意：
 
 * 其它架构/平台固件不能使用fancyss_hnd！
