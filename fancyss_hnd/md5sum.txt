@@ -67,3 +67,4 @@ c6665c6e577086af53efdf7581cebd9e shadowsocks_1.9.11.tar.gz
 42c72791f1886561c1c53576bcf1e690 shadowsocks_1.9.13.tar.gz
 5bfac18f2776888cf3cef2a72d663e2d shadowsocks_1.9.14.tar.gz
 5172e8bc1f5d4f2a50aee5b89062a12b shadowsocks_1.9.15.tar.gz
+f71204058f64cb5829466d5b505a21e0 shadowsocks_1.9.16.tar.gz
