@@ -81,8 +81,11 @@
 6. lite版本移除了负载均衡支持及其页面和二进制文件：haproxy
 
 7. lite版本移除了直连解析（非远端解析）的国外DNS方案及其二进制文件：cdns、chinadns、chinadns1、smartdns
+   
    直连解析本身国外cdn效果就较差，很多时候还无法解锁Netflix！不过保留下了一个直连解析方案：https_dns_proxy
+   
    https_dns_proxy因为有ECS的支持，还是具有一定的cdn效果的（针对直连机场，中转机场效果可能差）
+   
    个人建议直接使用chinadns-ng即可，既有很好的国外（远端解析）和国内cdn效果，又可以帮dnsmasq减轻规则负担。
 
 8. lite版本移除了haveged，因为现在较新的固件系统自带了熵增软件
