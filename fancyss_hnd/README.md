@@ -72,9 +72,9 @@
 
 2. lite版本移除了shdowsocks的v2ray-plugin插件功能及其对应的二进制文件：v2ray-plugin
 
-3. lite版本移除了KCP加速功能及其二进制文件：speederv1、speederv2、udp2raw
+3. lite版本移除了UDP加速功能及其二进制文件：speederv1、speederv2、udp2raw
 
-4. lite版本移除了UDP加速功能及其二进制文件：kcptun
+4. lite版本移除了KCP加速功能及其二进制文件：kcptun
 
 5. lite版本移除了koolgame协议支持及其二进制文件：koolgame、pdu
 
@@ -91,9 +91,9 @@
 
 10. lite版本移除了socks5页面及其脚本及其acl规则文件
 
-**总结1：**和全功能版本相比，Lite版本没有KCP加速、UDP加速、SS+v2ray-plugin、负载均衡、独立的socks5设定、koolgame协议，并且精简了一些直连解析的国外DNS解析方案
+**总结1：** 和全功能版本相比，Lite版本没有KCP加速、UDP加速、SS+v2ray-plugin、负载均衡、独立的socks5设定、koolgame协议，并且精简了一些直连解析的国外DNS解析方案
 
-**总结2：**所以现在lite版本是支持SS、 SSR、 V2ray、 Xray、 Trojan 五种客户端的科学上网、游戏加速工具。
+**总结2：** 所以现在lite版本是支持SS、 SSR、 V2ray、 Xray、 Trojan 五种客户端的科学上网、游戏加速工具。
 
 - 如果是不折腾以上被精简功能的用户，完全可以使用体积更小的lite版本
 - 当然，RT-AX56U_V2这种jffs分区极小的机型，也建议直接使用lite版本
