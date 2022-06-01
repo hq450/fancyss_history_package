@@ -1,166 +1,152 @@
-# [fancyss - 科学上网](https://hq450.github.io/fancyss/)
+# [fancyss - 科学上网离线安装包](https://hq450.github.io/fancyss/)
 
-> Fancyss is a project providing tools to across the GFW on asuswrt/merlin/openwrt based router with software center. 
->
-> 此项目提供用于asuswrt/merlin/openwrt为基础的，带软件中心固件路由器的科学上网。
+- Fancyss is a project providing tools to across the GFW on asuswrt/merlin based router with software center. 
+- 此项目提供用于asuswrt、asuswrt-merlin为基础的，带软件中心固件路由器的科学上网的离线安装包。
 
-## 机型/固件支持（表格版）
+## 目录说明
 
-> 下面的表格列出了各个不同版本fancyss对固件/平台/架构等的支持情况，以及不同fancyss对一些功能/特性的支持情况，对应的文字说明请见下文。
+> * 原适用于380固件的fancyss_arm已经停止维护，更名为fancyss_arm380并存放于legacy目录下
+> * 原适用于384/386固件的fancyss_arm384更名为fancyss_arm，目前最新版本为3.x.x
 
-|               |                         fancyss_hnd                          |                        fancyss_arm384                        |                         fancyss_arm                          |                        fancyss_mipsel                        |                         fancyss_x64                          |
-| :-----------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-|   固件来源    |                          koolshare                           |                          koolshare                           |                          koolshare                           |                          koolshare                           |                          koolshare                           |
-|     固件      |                      梅林改版/华硕官改                       |                         梅林384改版                          |                         梅林380改版                          |                           梅林改版                           |                        LEDE by fw867                         |
-|     架构      |                            armv8                             |                            armv7                             |                            armv7                             |                            mipsel                            |                             x64                              |
-|     平台      |                     hnd/axhnd/axhnd.675x                     |                             arm                              |                             arm                              |                            mipsel                            |                             x64                              |
-|   linux内核   |                     4.1.27/4.1.51/4.1.52                     |                           2.6.36.4                           |                           2.6.36.4                           |                             2.6                              |                             很新                             |
-|      CPU      |                         bcm490x系列                          |                          bcm4708/9                           |                          bcm4708/9                           |                           bcm4706                            |                          x64架构CPU                          |
-|   维护状态    |                            维护中                            |                            维护中                            |                         **停止维护**                         |                         **停止维护**                         |                         **备份留存**                         |
-|   最新版本    |                          **2.0.0**                           |                          **1.0.4**                           |                          **4.2.2**                           |                         **3.0.4？**                          |                          **2.2.2**                           |
-|   插件名称    |                           科学上网                           |                           科学上网                           |                           科学上网                           |                           科学上网                           |                            koolss                            |
-|   节点管理    |                      :heavy_check_mark:                      |                      :heavy_check_mark:                      |                      :heavy_check_mark:                      |                      :heavy_check_mark:                      |                      :heavy_check_mark:                      |
-|    ss支持     |                      :heavy_check_mark:                      |                      :heavy_check_mark:                      |                      :heavy_check_mark:                      |                      :heavy_check_mark:                      |                      :heavy_check_mark:                      |
-|    ssr支持    |                      :heavy_check_mark:                      |                      :heavy_check_mark:                      |                      :heavy_check_mark:                      |                      :heavy_check_mark:                      |                      :heavy_check_mark:                      |
-|   游戏模式    |                      :heavy_check_mark:                      |                      :heavy_check_mark:                      |                      :heavy_check_mark:                      |                             :x:                              |                      :heavy_check_mark:                      |
-|   节点订阅    |                      :heavy_check_mark:                      |                      :heavy_check_mark:                      |                      :heavy_check_mark:                      |                             :x:                              |                      :heavy_check_mark:                      |
-|   回国模式    |                      :heavy_check_mark:                      |                      :heavy_check_mark:                      |                      :heavy_check_mark:                      |                             :x:                              |                             :x:                              |
-|   v2ray支持   |                      :heavy_check_mark:                      |                      :heavy_check_mark:                      |                      :heavy_check_mark:                      |                             :x:                              |                             :x:                              |
-| koolgame支持  |                      :heavy_check_mark:                      |                      :heavy_check_mark:                      |                      :heavy_check_mark:                      |                             :x:                              |                             :x:                              |
-|   节点排序    |                      :heavy_check_mark:                      |                      :heavy_check_mark:                      |                             :x:                              |                             :x:                              |                      :heavy_check_mark:                      |
-|   故障转移    |                      :heavy_check_mark:                      |                      :heavy_check_mark:                      |                             :x:                              |                             :x:                              |                             :x:                              |
-| v2ray-plugin  |                      :heavy_check_mark:                      |                      :heavy_check_mark:                      |                      :heavy_check_mark:                      |                             :x:                              |                             :x:                              |
-|   多核支持    |                      :heavy_check_mark:                      |                             :x:                              |                             :x:                              |                             :x:                              |                             :x:                              |
-| tcp_fast_open |                      :heavy_check_mark:                      |                             :x:                              |                             :x:                              |                             :x:                              |                             :x:                              |
-|  固件下载-1   | [RT-AC86U 梅林改版](http://koolshare.cn/thread-127878-1-1.html) |  [华硕384系列](https://koolshare.cn/thread-164857-1-1.html)  |  [华硕380系列](https://koolshare.cn/thread-139322-1-1.html)  |       [华硕系列](http://koolshare.cn/forum-96-1.html)        |                                                              |
-|  固件下载-2   | [RT-AC86U 官改固件](http://koolshare.cn/thread-139965-1-1.html) |                                                              |  [网件380系列](https://koolshare.cn/thread-139324-1-1.html)  |                                                              |                                                              |
-|  固件下载-3   | [GT-AC5300 官改固件](http://koolshare.cn/thread-130902-1-1.html) |                                                              | [linksys EA 380系列](https://koolshare.cn/thread-139325-1-1.html) |                                                              |                                                              |
-|  固件下载-4   | [RT-AX88U 梅林改版](http://koolshare.cn/thread-158199-1-1.html) |                                                              |  [华为 ws880](https://koolshare.cn/thread-139322-1-1.html)   |                                                              |                                                              |
-|  固件下载-5   | [GT-AX11000 官改固件](http://koolshare.cn/thread-159465-1-1.html) |                                                              |                                                              |                                                              |                                                              |
-|  固件下载-6   | [RAX80 梅林改版](https://koolshare.cn/thread-177255-1-1.html) |                                                              |                                                              |                                                              |                                                              |
-|  固件下载-7   | [TUF-AX3000 官改固件](https://koolshare.cn/thread-179968-1-1.html) |                                                              |                                                              |                                                              |                                                              |
-|  固件下载-8   | [RT-AX86U 官改固件](https://koolshare.cn/thread-181845-1-1.html) |                                                              |                                                              |                                                              |                                                              |
-|   更新日志    | [Changelog.txt](https://github.com/hq450/fancyss/blob/master/fancyss_hnd/Changelog.txt) | [Changelog.txt](https://github.com/hq450/fancyss/blob/master/fancyss_arm384/Changelog.txt) | [Changelog.txt](https://github.com/hq450/fancyss/blob/master/fancyss_arm/Changelog.txt) |                             null                             | [Changelog.txt](https://github.com/hq450/fancyss/blob/master/fancyss_X64/Changelog.txt) |
-|  离线包下载   | [fancyss_hnd](https://github.com/hq450/fancyss_history_package/tree/master/fancyss_hnd) | [fancyss_arm384](https://github.com/hq450/fancyss_history_package/tree/master/fancyss_arm384) | [fancyss_arm](https://github.com/hq450/fancyss_history_package/tree/master/fancyss_arm) | [fancyss_mipsel](https://github.com/hq450/fancyss_history_package/tree/master/fancyss_mipsel) | [fancyss_x64](https://github.com/hq450/fancyss_history_package/tree/master/fancyss_X64) |
+1. **fancyss_arm**：存放适用于arm平台（固件版本≥384）的科学上网离线安装包，最新版为3.x.x
+2. **fancyss_hnd**：存放适用于hnd平台的科学上网离线安装包，最新版为3.x.x
+3. **fancyss_qca**：存放适用于qca平台的科学上网离线安装包，最新版为3.x.x
+4. **legacy**：存放不再维护的科学上网离线安装包，如：fancyss_arm380、fancyss_mipsel
 
+## 插件特色
 
+- 多客户端支持：Shadowsocks、ShadowsocksR、KoolGame、V2ray、Xray、Trojan
+- shadowsocks支持SIP003插件：simple-obfs和v2ray-plugin；V2ray和Xray支持多种协议配置
+- 多种模式支持：gfwlist模式、大陆白名单、游戏模式、全局模式、回国模式
+- 支持SS/SSR/V2ray/Xray/Trojan节点的在线订阅，支持节点生成二维码用以分享
+- 故障转移、主备切换、负载均衡、定时重启、定时订阅、规则更新、二进制更新
+- 支持kcptun、udpspeeder、udp2raw，可以实现代理加速，游戏加速，应对丢包等
+- armv8机型支持tcp fast open和ss/ssr/trojan多核心运行
 
-## 机型/固件支持（文字版）
+## 支持机型/固件
 
-### [fancyss_hnd](https://github.com/hq450/fancyss/tree/master/fancyss_hnd)
+> 以下为fancyss 3.0支持的机型/固件，点击机型可以前往相应固件下载地址
 
-> **fancyss_hnd**离线安装包仅能在koolshare 梅林/官改 hnd/axhnd/axhnd.675x平台机器上使用！具体支持机型如下：
+| 机型/固件下载                                                | 类型 | 平台           | CPU       | 架构  | linux内核 | 插件皮肤    | fancyss版本 |
+| ------------------------------------------------------------ | ---- | -------------- | --------- | ----- | --------- | ----------- | ----------- |
+| [R6300V2](https://fw.koolcenter.com/KoolCenter_Merlin_New_Gen_386/Netgear/R6300v2/) | 梅改 | 6.x.4708       | BCM4708   | armv7 | 2.6.36.4  | asuswrt     | fancyss_arm |
+| [RT-AC68U](https://www.koolcenter.com/posts/38)              | 梅改 | 6.x.4708       | BCM4708   | armv7 | 2.6.36.4  | asuswrt     | fancyss_arm |
+| [RT-AC88U](https://www.koolcenter.com/posts/39)              | 梅改 | 7.14.114.x     | BCM4709   | armv7 | 2.6.36.4  | asuswrt     | fancyss_arm |
+| [RT-AC3100](https://www.koolcenter.com/posts/40)             | 梅改 | 7.14.114.x     | BCM4709   | armv7 | 2.6.36.4  | asuswrt     | fancyss_arm |
+| [RT-AC5300](https://www.koolcenter.com/posts/41)             | 梅改 | 7.14.114.x     | BCM4709   | armv7 | 2.6.36.4  | asuswrt     | fancyss_arm |
+| [RT-AC86U](https://www.koolcenter.com/posts/36)              | 梅改 | hnd            | BCM4906   | armv8 | 4.1.27    | asuswrt     | fancyss_hnd |
+| [RT-AC86U](https://www.koolcenter.com/posts/139)             | 官改 | hnd            | BCM4906   | armv8 | 4.1.27    | asuswrt[^1] | fancyss_hnd |
+| [GT-AC2900](https://fw.koolcenter.com/KoolCenter_Merlin_New_Gen_386/GT-AC2900/) | 梅改 | hnd            | BCM4906   | armv8 | 4.1.27    | asuswrt     | fancyss_hnd |
+| [GT-AC2900](https://www.koolcenter.com/posts/37)             | 官改 | hnd            | BCM4906   | armv8 | 4.1.27    | rog         | fancyss_hnd |
+| [GT-AC5300](https://www.koolcenter.com/posts/12)             | 官改 | hnd            | BCM4908   | armv8 | 4.1.27    | rog         | fancyss_hnd |
+| [RT-AX88U](https://www.koolcenter.com/posts/34)              | 梅改 | axhnd          | BCM4908   | armv8 | 4.1.51    | asuswrt     | fancyss_hnd |
+| [RT-AX88U](https://www.koolcenter.com/posts/142)             | 官改 | axhnd          | BCM4908   | armv8 | 4.1.51    | asuswrt     | fancyss_hnd |
+| [RAX80](https://www.koolcenter.com/posts/43)                 | 梅改 | axhnd          | BCM4908   | armv8 | 4.1.51    | asuswrt     | fancyss_hnd |
+| [GT-AX11000](https://www.koolcenter.com/posts/140)           | 官改 | axhnd          | BCM4908   | armv8 | 4.1.51    | rog         | fancyss_hnd |
+| [GT-AX11000](https://www.koolcenter.com/posts/35)            | 梅改 | axhnd          | BCM4908   | armv8 | 4.1.51    | asuswrt     | fancyss_hnd |
+| [RT-AX92U](https://www.koolcenter.com/posts/20)              | 官改 | axhnd          | BCM4906   | armv8 | 4.1.51    | asuswrt     | fancyss_hnd |
+| [TUF-AX3000](https://www.koolcenter.com/posts/11)            | 官改 | axhnd.675x     | BCM6750   | armv7 | 4.1.52    | tuf         | fancyss_hnd |
+| [TUF-AX5400](https://www.koolcenter.com/posts/130)           | 梅改 | axhnd.675x     | BCM6750   | armv7 | 4.1.52    | tuf         | fancyss_hnd |
+| [TUF-AX5400](https://www.koolcenter.com/posts/141)           | 官改 | axhnd.675x     | BCM6750   | armv7 | 4.1.52    | tuf         | fancyss_hnd |
+| [RT-AX58U](https://www.koolcenter.com/posts/130)             | 梅改 | axhnd.675x     | BCM6750   | armv7 | 4.1.52    | asuswrt     | fancyss_hnd |
+| [RAX50](https://www.koolcenter.com/posts/130)                | 梅改 | axhnd.675x     | BCM6750   | armv7 | 4.1.52    | asuswrt     | fancyss_hnd |
+| [RT-AX82U](https://www.koolcenter.com/posts/18)              | 官改 | axhnd.675x     | BCM6750   | armv7 | 4.1.52    | asuswrt     | fancyss_hnd |
+| [RT-AX82U](https://www.koolcenter.com/posts/130)             | 梅改 | axhnd.675x     | BCM6750   | armv7 | 4.1.52    | asuswrt     | fancyss_hnd |
+| [ZenWiFi_XT8](https://www.koolcenter.com/posts/137)          | 官改 | axhnd.675x     | BCM6755   | armv7 | 4.1.52    | asuswrt     | fancyss_hnd |
+| [ZenWiFi_XT8](https://www.koolcenter.com/posts/130)          | 梅改 | axhnd.675x     | BCM6755   | armv7 | 4.1.52    | asuswrt     | fancyss_hnd |
+| [ZenWiFi_XD4](https://www.koolcenter.com/posts/21)           | 官改 | axhnd.675x     | BCM6755   | armv7 | 4.1.52    | asuswrt     | fancyss_hnd |
+| [RT-AX56U_V2](https://www.koolcenter.com/posts/16)           | 官改 | axhnd.675x     | BCM6755   | armv7 | 4.1.52    | asuswrt     | fancyss_hnd |
+| [RT-AX1800](https://www.koolcenter.com/posts/16)             | 梅改 | axhnd.675x     | BCM6755   | armv7 | 4.1.52    | asuswrt     | fancyss_hnd |
+| [RT-AX56U](https://www.koolcenter.com/posts/130)             | 梅改 | axhnd.675x     | BCM6755   | armv7 | 4.1.52    | asuswrt     | fancyss_hnd |
+| [RAX70](https://www.koolcenter.com/posts/130)                | 梅改 | axhnd.675x     | BCM6755   | armv7 | 4.1.52    | asuswrt     | fancyss_hnd |
+| [RT-AX68U](https://www.koolcenter.com/posts/136)             | 官改 | p1axhnd.675x   | BCM4906   | armv8 | 4.1.52    | asuswrt     | fancyss_hnd |
+| [RT-AX68U](https://www.koolcenter.com/posts/33)              | 梅改 | p1axhnd.675x   | BCM4906   | armv8 | 4.1.52    | asuswrt     | fancyss_hnd |
+| [RT-AX86U](https://www.koolcenter.com/posts/135)             | 官改 | p1axhnd.675x   | BCM4908   | armv8 | 4.1.52    | asuswrt     | fancyss_hnd |
+| [RT-AX86U](https://www.koolcenter.com/posts/5)               | 梅改 | p1axhnd.675x   | BCM4908   | armv8 | 4.1.52    | asuswrt     | fancyss_hnd |
+| [GT-AXE11000](https://www.koolcenter.com/posts/130)          | 梅改 | p1axhnd.675x   | BCM4908   | armv8 | 4.1.52    | asuswrt     | fancyss_hnd |
+| [GT-AX6000](https://www.koolcenter.com/posts/125)            | 官改 | 5.04axhnd.675x | BCM4912   | armv8 | 4.19.183  | rog         | fancyss_hnd |
+| [GT-AX6000](https://www.koolcenter.com/posts/148)            | 梅改 | 5.04axhnd.675x | BCM4912   | armv8 | 4.19.183  | asuswrt     | fancyss_hnd |
+| [ZenWiFi_Pro_XT12](https://www.koolcenter.com/posts/133)     | 官改 | 5.04axhnd.675x | BCM4912   | armv8 | 4.19.183  | asuswrt     | fancyss_hnd |
+| [ZenWiFi_Pro_XT12](https://www.koolcenter.com/posts/149)     | 梅改 | 5.04axhnd.675x | BCM4912   | armv8 | 4.19.183  | asuswrt     | fancyss_hnd |
+| [TUF-AX3000_V2](https://www.koolcenter.com/posts/161)        | 官改 | 5.04axhnd.675x | BCM6756   | armv7 | 4.19.183  | tuf         | fancyss_hnd |
+| [RT-AX89X](https://www.koolcenter.com/posts/126)             | 官改 | qca-ipq806x    | ipq8074/a | armv7 | 4.4.60    | asuswrt     | fancyss_qca |
 
-#### fancyss_hnd 支持机型/固件：
+## 版本选择
 
-| 机型/固件下载                                                | 类型   | 平台       | CPU     | 架构  | 支持版本 | 皮肤        |
-| ------------------------------------------------------------ | ------ | ---------- | ------- | ----- | -------- | ----------- |
-| [ASUS RT-AC86U](http://koolshare.cn/thread-127878-1-1.html)  | 梅林改 | hnd        | BCM4906 | ARMV8 | 全部     | asuswrt     |
-| [ASUS RT-AX88U](http://koolshare.cn/thread-158199-1-1.html)  | 梅林改 | axhnd      | BCM4908 | ARMV8 | 全部     | asuswrt     |
-| [NETGEAR RAX80](https://koolshare.cn/thread-177255-1-1.html) | 梅林改 | axhnd      | BCM4908 | ARMV8 | 全部     | asuswrt     |
-| [ASUS RT-AC86U](http://koolshare.cn/thread-139965-1-1.html)  | 官改   | hnd        | BCM4906 | ARMV8 | 全部     | rog  (红色) |
-| [ASUS ROG GT-AC5300](http://koolshare.cn/thread-130902-1-1.html) | 官改   | hnd        | BCM4908 | ARMV8 | 全部     | rog  (红色) |
-| [ASUS ROG GT-AX11000](http://koolshare.cn/thread-159465-1-1.html) | 官改   | axhnd      | BCM4908 | ARMV8 | 全部     | rog  (红色) |
-| [ASUS TUF-AX3000](https://koolshare.cn/thread-179968-1-1.html) | 官改   | axhnd.675x | BCM6750 | ARMV7 | ≥ 1.8.3  | tuf（橙色） |
-| [RT-AX86U](https://koolshare.cn/thread-181845-1-1.html)      | 官改   | axhnd.675x | BCM4908 | ARMV8 | ≥ 1.8.3  | asuswrt     |
+> 以下描述仅针对fancyss 3.0版本
 
-#### 注意：
+fancyss 3.0支持hnd、qca、arm三个平台，每个平台又有full版本和lite版本
 
-* fancyss_hnd目前仅支持以上改版固件机型，其它架构/平台固件，原版固件均不能使用fancyss_hnd！
-* 使用fancyss_hnd科学上网插件，强烈建议使用chrome或者chrouium内核的浏览器！以保证最佳兼容性！
+full版本为全功能版本，支持SS、 SSR、KoolGame、V2ray、 Xray、 Trojan 六种客户端，安装包体积较大
+
+lite版本为精简版本，支持SS、 SSR、 V2ray、 Xray、 Trojan 五种客户端，安装包小巧，以下为lite版本精简内容：
+
+1. lite版本移除了v2ray、trojan二进制文件，默认使用xray-core来运行v2ray和trojan协议
+
+2. lite版本移除了shdowsocks的v2ray-plugin插件功能及其对应的二进制文件：v2ray-plugin
+
+3. lite版本移除了UDP加速功能及其二进制文件：speederv1、speederv2、udp2raw
+
+4. lite版本移除了KCP加速功能及其二进制文件：kcptun
+
+5. lite版本移除了koolgame协议支持及其二进制文件：koolgame、pdu
+
+6. lite版本移除了负载均衡支持及其页面和二进制文件：haproxy
+
+7. lite版本移除了直连解析的国外DNS方案及其二进制文件：cdns、chinadns、chinadns1、smartdns
+
+8. lite版本移除了haveged，因为现在较新的固件系统自带了熵增软件
+
+9. lite版本移除了shdowsocks-rust替换shadowsocks-libev功能，默认由shadowsocks-libev运行ss协议
+
+10. lite版本移除了socks5页面及其脚本及其acl规则文件
+
+如果是不折腾以上被精简功能的用户，完全可以使用体积更小的lite版本
+
+RT-AX56U_V2这种jffs分区极小(15MB)的机型，建议直接使用lite版本
+
+要切换为lite版本，直接安装lite版本的离线安装包即可，以后在线更新也会维持为lite版本
+
+要切换为full版本，直接安装full版本的离线安装包即可，以后在线更新也会维持为full版本
+
+## 插件下载
+
+1. 根据你的机型和固件版本，进入到相应的离线安装包存放目录后，选择你需要的版本进行下载即可。
+
+2. 或者使用以下插件离线包下载导航表格：
+
+   | 平台 | 最新full版本下载                                             | 最新lite版本下载                                             | 历史版本下载（包含最新版）                                   |
+   | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+   | hnd  | [fancyss_hnd_full](https://raw.githubusercontent.com/hq450/fancyss/3.0/packages/fancyss_hnd_full.tar.gz) | [fancyss_hnd_lite](https://raw.githubusercontent.com/hq450/fancyss/3.0/packages/fancyss_hnd_lite.tar.gz) | [fancyss_hnd](https://github.com/hq450/fancyss_history_package/tree/master/fancyss_hnd/version_3.x.x) |
+   | qca  | [fancyss_qca_full](https://raw.githubusercontent.com/hq450/fancyss/3.0/packages/fancyss_qca_full.tar.gz) | [fancyss_qca_lite](https://raw.githubusercontent.com/hq450/fancyss/3.0/packages/fancyss_qca_lite.tar.gz) | [fancyss_qca](https://github.com/hq450/fancyss_history_package/tree/master/fancyss_qca/version_3.x.x) |
+   | farm | [fancyss_arm_full](https://raw.githubusercontent.com/hq450/fancyss/3.0/packages/fancyss_arm_full.tar.gz) | [fancyss_arm_lite](https://raw.githubusercontent.com/hq450/fancyss/3.0/packages/fancyss_arm_lite.tar.gz) | [fancyss_arm](https://github.com/hq450/fancyss_history_package/tree/master/fancyss_arm/version_3.x.x) |
+
+## 插件安装
+
+1. 离线安装：下载并校验好离线安装包后，在软件中心内使用**离线安装**/**手动安装**功能，选择安装包后上传并安装即可。
+
+2. 命令安装：(以fancyss_hnd_lite.tar.gz为例，先下载好安装包，并将其上传到路由器的/tmp目录)
+
+   ```bash
+   mv /tmp/fancyss_hnd_lite.tar.gz /tmp/shadowsocks.tar.gz
+   tar -zxvf /tmp/shadowsocks.tar.gz
+   sh /tmp/shadowsocks/install.sh
+   ```
+
+## 注意事项
+
+* 强烈建议使用chrome或者chrouium内核的浏览器！以保证最佳兼容性！
 * 强烈建议在`最新版本的固件`和`最新版本软件中心`上使用fancyss_hnd！
-* RT-AC86U/GT-AC5300/GT-AX11000官改固件使用的是ROG皮肤，插件安装会自动识别机型并安装对应皮肤版本。
-* TUF-AX3000官改固件使用的是TUF橙色皮肤，插件安装会自动识别机型并安装对应皮肤版本。
-* TUF-AX3000暂时不能使用chinadns-ng，smartdns，v2ray-plugin这三个功能（1.8.3），因为这些功能使用的二进制是64位的，而BCM6750作为32位cpu是不能运行的，后期版本将逐渐添加支持。
-* RT-AX86U和TUF-AX3000两款机型因为是较新的官改固件，只有fancyss_hnd 1.8.3及以上版本能正常使用。
+* 插件会自动跟随当前固件的皮肤类型，支持assuwrt、rog、tuf三种皮肤。
+* 一些机型的联名版，只要刷了官改/梅林改版固件的，均能安装本插件！
+* 原适用于384/386固件的fancyss_arm384更名为fancyss_arm，目前最新版本为3.x.x
+* 原适用于380固件的fancyss_arm已经停止维护，更名为fancyss_arm380并存放于legacy目录下
+* 原适用于mipsel架构的的fancyss_mipsel已经停止维护，现存放于legacy目录下
+* 适用于fw867 Openwrt/LEDE固件的fancyss_X64目前停止维护状态，存放于legacy目录下
 
-#### 相关链接：
 
-* fancyss_hnd离线包：[https://github.com/hq450/fancyss_history_package/tree/master/fancyss_hnd](https://github.com/hq450/fancyss_history_package/tree/master/fancyss_hnd)
-* fancyss_hnd更新日志：https://github.com/hq450/fancyss/blob/master/fancyss_hnd/Changelog.txt
-* fancyss_hnd机型的固件下载地址：[http://koolshare.cn/forum-96-1.html](http://koolshare.cn/forum-96-1.html)
 
-----
 
-### [fancyss_arm384](https://github.com/hq450/fancyss/tree/master/fancyss_arm)
 
-> **fancyss_arm384**离线安装包仅能在koolshare 梅林 arm 384平台，且linux内核为2.6.36.4的armv7架构的机器上使用！
 
-**fancyss_arm384**支持机型（需刷koolshare梅林**384**改版固件，版本：384_1x_x，如384_12_0）：
-
-* 华硕系列：`RT-AC68U` `RT-AC66U-B1` `RT-AC1900P` `RT-AC87U` `RT-AC88U` `RT-AC3100` `RT-AC3200` `RT-AC5300`
-
-#### 注意：
-
-* 其它架构/平台固件不能使用fancyss_arm384！
-* 使用本插件建议使用chrome或者chrome内核的浏览器！
-* 强烈建议在最新版本的固件和最新版本软件中心上使用fancyss_arm384！
-
-#### 相关链接：
-
-* arm384机型的科学上网离线包：[https://github.com/hq450/fancyss_history_package/tree/master/fancyss_arm384](https://github.com/hq450/fancyss_history_package/tree/master/fancyss_arm384)
-* arm384机型的科学上网更新日志：https://github.com/hq450/fancyss/blob/master/fancyss_arm384/Changelog.txt
-* arm384机型的固件下载地址：[https://koolshare.cn/thread-164857-1-1.html](https://koolshare.cn/thread-164857-1-1.html)
-
-----
-
-### [fancyss_arm](https://github.com/hq450/fancyss/tree/master/fancyss_arm)（停止维护）
-
-> **fancyss_arm 停止维护通知：**
->
-> 2019年12月10日 
->
-> -- by hq450
->
-> 因为fancyss_arm支持的固件较旧（最高380 X7.9.1），软件中心API较旧（1.0代），并且维护者持有的armv7机型（RT-AC5300）的固件已经升级到koolshare 384版本，加上代码差异时间问题，很难继续维持下去。所以arm380平台上的科学上网插件停止维护，最终版本将停留在4.2.2。
->
-> 如果你持有华硕armv7机型（`RT-AC68U` `RT-AC66U-B1` `RT-AC1900P` `RT-AC87U` `RT-AC88U` `RT-AC3100` `RT-AC3200` `RT-AC5300`），那么你可以将你的固件更新至koolshare 384版本（[固件下载地址](https://koolshare.cn/thread-164857-1-1.html)）后使用fancyss_arm384，目前fancyss_arm384处于维护状态，且功能上更加新。
->
-> 如果你持有的是网件、linksys等armv7机型，那么非常遗憾，因为你的机器固件最高只能支持到koolshare arm380 X7.9.1，所以你只能使用已经停止维护的fancyss_arm，最终版本为4.2.2，不过你仍然可以获得v2ray二进制和规则的更新。如果你在其他地方看见有人发布高于此版本的离线包，请谨慎使用，因为这很可能不是本项目发布的。
-
-> **fancyss_arm**离线安装包仅能在koolshare 梅林 arm 380平台，且linux内核为2.6.36.4的armv7架构的机器上使用！
-
-**fancyss_arm**支持机型（需刷koolshare梅林**380**改版固件，最新版本：X7.9.1）：
-
-* 华硕系列：`RT-AC56U` `RT-AC68U` `RT-AC66U-B1` `RT-AC1900P` `RT-AC87U` `RT-AC88U` `RT-AC3100` `RT-AC3200` `RT-AC5300`
-* 网件系列：`R6300V2` `R6400` `R6900` `R7000` `R8000` `R8500`
-* linksys EA系列：`EA6200` `EA6400` `EA6500v2` `EA6700` `EA6900`
-* 华为：`ws880`
-
-#### 注意：
-
-* 其它架构/平台固件不能使用fancyss_arm！
-* 使用本插件建议使用chrome或者chrome内核的浏览器！
-* 强烈建议在最新版本的固件和最新版本软件中心上使用fancyss_arm！
-* fancyss_arm仅支持版本号≥X7.2的固件，订阅功能需要版本号≥X7.7（最新版本固件为X7.9.1）
-
-#### 相关链接：
-
-* arm机型的科学上网离线包：[https://github.com/hq450/fancyss_history_package/tree/master/fancyss_arm](https://github.com/hq450/fancyss_history_package/tree/master/fancyss_arm)
-* arm机型的科学上网更新日志：https://github.com/hq450/fancyss/blob/master/fancyss_arm/Changelog.txt
-* arm机型的固件下载地址：[http://koolshare.cn/forum-96-1.html](http://koolshare.cn/forum-96-1.html)
-
-----
-
-### [fancyss_mipsel](https://github.com/hq450/fancyss/tree/master/fancyss_mipsel) （停止维护）
-
-> 适用于merlin koolshare mipsel架构机型的改版固件，由于mipsel架构老旧且性能较低，此架构机型的科学上网插件已经不再维护，最后的版本是3.0.4，此处作为仓库搬迁后的备份留存。
-
-**fancyss_mipsel**支持机型（需刷梅林koolshare改版固件）：
-
-* 华硕系列：`RT-N66U` `RT-AC66U（非RT-AC66U-B1）`
-
-#### 相关链接：
-
-* mipsel机型的科学上网离线包：[https://github.com/hq450/fancyss_history_package/tree/master/fancyss_mipsel](https://github.com/hq450/fancyss_history_package/tree/master/fancyss_mipsel)
-* mipsel机型的固件下载地址：[http://koolshare.cn/forum-96-1.html](http://koolshare.cn/forum-96-1.html)
-
-----
-
-### [fancyss_X64](https://github.com/hq450/fancyss/tree/master/fancyss_X64) （备份留存）
-
-> 适用于koolshare OpenWRT/LEDE X64 带酷软的固件，由于该固件酷软下架了koolss插件，本项目将其收入。
-
-#### 相关链接：
-* koolshare OpenWRT/LEDE X64机型的科学上网离线包：[https://github.com/hq450/fancyss_history_package/tree/master/fancyss_X64](https://github.com/hq450/fancyss_history_package/tree/master/fancyss_X64)
 
