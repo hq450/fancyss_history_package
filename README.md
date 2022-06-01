@@ -146,7 +146,7 @@ RT-AX56U_V2这种jffs分区极小(15MB)的机型，建议直接使用lite版本
 
 
 
-
+[^1]: RT-AC86U从384_81918_koolshare固件版本开始，使用的是asuswrt风格ui，而不是rog风格。
 
 
 
