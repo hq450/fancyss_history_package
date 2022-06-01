@@ -1,0 +1,2 @@
+c59767b7eb6e5919349775aa412426d2 fancyss_qca_full_3.0.0.tar.gz
+b6cde10b083fb7920e41286269409056 fancyss_qca_lite_3.0.0.tar.gz

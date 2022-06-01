@@ -1,0 +1,2 @@
+cdfc46d3983ae680ed962a80a078018d fancyss_arm_full_3.0.0.tar.gz
+e94bd98d254aa3081f0844b595adeaca fancyss_arm_lite_3.0.0.tar.gz
