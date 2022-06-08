@@ -2,5 +2,7 @@
 e9b7ad0cf850dfdcbeedd6cf3e1a45fa fancyss_hnd_lite_3.0.0.tar.gz
 11354dcdefc19ce339d435160445f4be fancyss_hnd_full_3.0.1.tar.gz
 fb851a6c2da5138451cac3ce3d6da6fc fancyss_hnd_lite_3.0.1.tar.gz
-9757ae32746833890778002602a272fa fancyss_hnd_full_3.0.2.tar.gz
-ff768b12d98d8d1518a5ef4cf665064d fancyss_hnd_lite_3.0.2.tar.gz
+24cb7241dd7536a846c8718002dc4532 fancyss_hnd_full_3.0.2.tar.gz
+49ff34cfd661117aa4e841349bae1651 fancyss_hnd_lite_3.0.2.tar.gz
+089ab5bd594254d5ee3a974c9d552f45 fancyss_hnd_full_3.0.3.tar.gz
+e81df5995ab9ac1b64f3f8260178477a fancyss_hnd_lite_3.0.3.tar.gz
