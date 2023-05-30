@@ -9,18 +9,23 @@
 > * 原适用于384/386固件的fancyss_arm384更名为fancyss_arm，目前最新版本为3.x.x
 
 1. **fancyss_arm**：存放适用于arm平台（固件版本≥384）的科学上网离线安装包，最新版为3.x.x
-2. **fancyss_hnd**：存放适用于hnd平台的科学上网离线安装包，最新版为3.x.x
-3. **fancyss_qca**：存放适用于qca平台的科学上网离线安装包，最新版为3.x.x
-4. **legacy**：存放不再维护的科学上网离线安装包，如：fancyss_arm380、fancyss_mipsel
+2. **fancyss_hnd**：存放适用于hnd armv7l平台的科学上网离线安装包，最新版为3.x.x
+3. **fancyss_hnd_v8**：存放适用于hnd aarch64平台的科学上网离线安装包，最新版为3.x.x
+4. **fancyss_qca**：存放适用于qca平台的科学上网离线安装包，最新版为3.x.x
+5. **fancyss_mtk**：存放适用于mtk联发科平台的科学上网离线安装包，最新版为3.x.x
+6. **legacy**：存放不再维护的科学上网离线安装包，如：fancyss_arm380、fancyss_mipsel
 
 ## 插件特色
 
-- 多客户端支持：Shadowsocks、ShadowsocksR、KoolGame、V2ray、Xray、Trojan
+- 多平台支持：博通armv7，博通arm64，联发科Filogic 830 MT7986A
+- 多客户端支持：Shadowsocks、ShadowsocksR、V2ray、Xray、Trojan、NaïveProxy
 - shadowsocks支持SIP003插件：simple-obfs和v2ray-plugin；V2ray和Xray支持多种协议配置
 - 多种模式支持：gfwlist模式、大陆白名单、游戏模式、全局模式、回国模式
+- 提供多种现成的DNS方案，并且可以自由方便的进行DNS方案自定义配置
 - 支持SS/SSR/V2ray/Xray/Trojan节点的在线订阅，支持节点生成二维码用以分享
 - 故障转移、主备切换、负载均衡、定时重启、定时订阅、规则更新、二进制更新
 - 支持kcptun、udpspeeder、udp2raw，可以实现代理加速，游戏加速，应对丢包等
+- 同时提供full版本和lite版本，hnd_lite版本安装后占用不到8MB的空间，适合小jffs机型
 - armv8机型支持tcp fast open和ss/ssr/trojan多核心运行
 
 ## 支持机型/固件
