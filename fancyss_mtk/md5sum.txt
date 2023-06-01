@@ -1,4 +1,6 @@
 a98a2406b1d1292e378024216d00906b fancyss_mtk_full_3.0.6.tar.gz
 3533d06caee7697f3f7beae272e5b55c fancyss_mtk_lite_3.0.6.tar.gz
-a9a06b0ba28e857a5866d1fd9f80b23a fancyss_mtk_full_3.0.7.tar.gz
-856ff0f5efa67962900c304baf623bca fancyss_mtk_lite_3.0.7.tar.gz
+4382be226231cdd38880d297e1489723 fancyss_mtk_full_3.0.7.tar.gz
+8e85e4fc526c0257bbe74d3eeb522718 fancyss_mtk_lite_3.0.7.tar.gz
+96dc1f1299f10a72b2f307965fa8ae57 fancyss_mtk_full_3.0.8.tar.gz
+74d2a9f25cb460339419220c43279029 fancyss_mtk_lite_3.0.8.tar.gz
