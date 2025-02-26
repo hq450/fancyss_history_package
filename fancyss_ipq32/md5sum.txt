@@ -1,0 +1,2 @@
+9b3318f655a15954455db43b4b6701da fancyss_ipq32_full_3.3.7.tar.gz
+f8d75a5a2515b6a802fca1b288a1b5e7 fancyss_ipq32_lite_3.3.7.tar.gz
