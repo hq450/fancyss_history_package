@@ -96,3 +96,5 @@ e9689d622e98c5c2bf8c6ab603aa2339 fancyss_arm_full_3.5.12.tar.gz
 b9e832aba7c1405e5b21454e79e89b78 fancyss_arm_lite_3.5.13.tar.gz
 93878364398dd9e7790ad16b9399d378 fancyss_arm_full_3.5.14.tar.gz
 9f9cdf754a9593f76ad9f6d037506c1c fancyss_arm_lite_3.5.14.tar.gz
+25938dbd7f05736efb5ea58a4f11892f fancyss_arm_full_3.5.15.tar.gz
+bd9a59d421ad149fd7a5b5bc8e9fbf5b fancyss_arm_lite_3.5.15.tar.gz
