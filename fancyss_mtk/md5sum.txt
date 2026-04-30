@@ -110,3 +110,5 @@ df9351fc528b297660e9ed2da2c52232 fancyss_mtk_lite_3.5.19.tar.gz
 300a3a615d10e02e8c8b569b9831f669 fancyss_mtk_lite_3.5.20.tar.gz
 fd151db58f3251570418ff6d6a2045af fancyss_mtk_full_3.5.21.tar.gz
 51d9a8184afb1cdb3ef54973f0863d88 fancyss_mtk_lite_3.5.21.tar.gz
+58545c125a6c2dd2da18d3c98504eb93 fancyss_mtk_full_3.5.22.tar.gz
+45592fbe8076fc77c5ada0cf3baf89c5 fancyss_mtk_lite_3.5.22.tar.gz
